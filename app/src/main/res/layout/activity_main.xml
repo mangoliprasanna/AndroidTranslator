@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#b39ddb"
+    android:layout_height="match_parent"
+    tools:context="com.example.mango.translator.MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/view_height"
+        android:background="#512da8"   />
+
+    <RelativeLayout
+        android:id="@+id/edit_txt_lay"
+        android:layout_margin="@dimen/common_padding"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/relative_height">
+
+        <EditText
+            android:id="@+id/edit_txt"
+            android:text="Hello"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:singleLine="true"
+            android:padding="@dimen/common_padding"
+            android:paddingRight="@dimen/right_padding"
+            android:hint="Enter Word to Translate" />
+
+        <Button
+            android:id="@+id/id_search_button"
+            android:layout_width="@dimen/relative_height"
+            android:onClick="updateWords"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/edit_txt"
+            android:background="@drawable/ic_g_translate_black"
+            android:layout_alignBottom="@+id/edit_txt"
+            android:layout_alignRight="@+id/edit_txt" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@+id/edit_txt_lay"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical" />
+</RelativeLayout>
