@@ -4,7 +4,7 @@ The given project helps to translate the given word in many languages with help 
 ## Translation
 The translation is done by sending request to server.
 The format for sending the request is as follows.
-> http://translator-133.herokuapp.com/JSON/<word>
+> http://translator-133.herokuapp.com/JSON/word
   
   ## Screenshot
   ![alt text](https://github.com/mangoliprasanna/AndroidTranslator/blob/master/trans.png "App Screenshot")
